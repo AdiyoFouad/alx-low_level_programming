@@ -4,7 +4,8 @@
  * main - main function
  *
  * Return: 0
- **/
+ *
+ */
 
 int main(void)
 {
@@ -13,6 +14,7 @@ int main(void)
 	long li;
 	long long lli;
 	float f;
+
 	printf("Size of a char: %d byte(s)\n", sizeof(c));
 	printf("Size of a int: %d byte(s)\n", sizeof(i));
 	printf("Size of a long int: %d byte(s)\n", sizeof(li));

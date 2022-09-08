@@ -6,10 +6,15 @@
  **/
 int main(void)
 {
-	print("Size of a char: %ld byte(s)\n", sizeof(char));
-	print("Size of a int: %ld byte(s)\n", sizeof(int));
-	print("Size of a long int: %ld byte(s)\n", sizeof(long int));
-	print("Size of a long long int: %ld byte(s)\n", sizeof(long long));
-	print("Size of a float: %ld byte(s)\n", sizeof(float));
+	char c;
+	int i;
+	long li;
+	long long lli;
+	float f;
+	print("Size of a char: %ld byte(s)\n", sizeof(c));
+	print("Size of a int: %ld byte(s)\n", sizeof(i));
+	print("Size of a long int: %ld byte(s)\n", sizeof(li));
+	print("Size of a long long int: %ld byte(s)\n", sizeof(lli));
+	print("Size of a float: %ld byte(s)\n", sizeof(f));
 	return (0);
 }

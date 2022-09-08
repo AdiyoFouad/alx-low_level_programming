@@ -2,8 +2,8 @@
 /**
  * main - main function
  *
- * Return: return 0
- */
+ * Return: 0
+ **/
 int main(void)
 {
 	print("Size of a char: %d byte(s)\n",sizeof(char));

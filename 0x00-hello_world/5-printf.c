@@ -3,7 +3,7 @@
  * main- Main Function
  *
  * Return : always return 0
- */
+ **/
 
 int mai(void)
 {

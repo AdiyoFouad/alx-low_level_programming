@@ -30,14 +30,12 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(l);
-						if (!(i == 57 && j == 56))
+						if (!(i == 57 && j == 56 && k== 57 && l == 57))
 						{
-							if (!(k == 57 && l == 57))
-							{
-								putchar(',');
-								putchar(' ');
-							}
+							putchar(',');
+							putchar(' ');
 						}
+
 					}
 				}
 			}

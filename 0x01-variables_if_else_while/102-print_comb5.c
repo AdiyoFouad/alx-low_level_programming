@@ -23,10 +23,8 @@ int main(void)
 			{
 				for (l = 48; l < 58; l++)
 				{
-					if (i <= k)
+					if (i < k || (i = k && j < l))
 					{
-						if (j < l)
-						{
 							putchar(i);
 							putchar(j);
 							putchar(' ');
@@ -40,7 +38,6 @@ int main(void)
 									putchar(' ');
 								}
 							}
-						}
 					}
 				}
 			}

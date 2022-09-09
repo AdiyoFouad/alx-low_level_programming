@@ -14,7 +14,8 @@ int main(void)
 
 	for (i = 97; i < 123; i++)
 		if (i != 101)
-			if(i != 113)
+			if (i != 113)
 				putchar(i);
+	putchar('\n');
 	return (0);
 }

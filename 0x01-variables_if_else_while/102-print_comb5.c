@@ -32,13 +32,13 @@ int main(void)
 							putchar(' ');
 							putchar(k);
 							putchar(l);
-						}
-						if (!(i == 57 && j == 56))
-						{
-							if(!(k == 57 && l==57))
+							if (!(i == 57 && j == 56))
 							{
-								putchar(',');
-								putchar(' ');
+								if (!(k == 57 && l == 57))
+								{
+									putchar(',');
+									putchar(' ');
+								}
 							}
 						}
 					}

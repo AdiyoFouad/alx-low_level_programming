@@ -15,29 +15,19 @@ int main(void)
 	int k;
 	int l;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 99; i++)
 	{
-		for (j = 48; j < 58; j++)
+		for (j = i + 1; j < 100; j++)
 		{
-			for (k = 48; k < 58; k++)
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(J % 10 + '0');
+			if (!(i / 10 == 9 && i % 10 == 8))
 			{
-				for (l = 48; l < 58; l++)
-				{
-					if (i < k || (i == k && j < l))
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
-						if (!(i == 57 && j == 56 && k == 57 && l == 57))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}

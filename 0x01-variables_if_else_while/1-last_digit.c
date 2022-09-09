@@ -19,11 +19,9 @@ int main(void)
 	printf("Last digit of %d is %d and is ", n, ld);
 	if (ld == 0)
 		printf("0\n");
-	if (ld < 0)
-		ld = -ld;
-	if (ld < 6)
+	else if (ld < 6)
 		printf("less than 6 and not 0\n");
-	if (ld > 5)
-		printf("greater than 5");
+	else if (ld > 5)
+		printf("greater than 5\n");
 	return (0);
 }

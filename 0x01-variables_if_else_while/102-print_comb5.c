@@ -26,6 +26,7 @@ int main(void)
 					if (i < k || (i == k && j < l))
 					{
 						putchar(i);
+						putchar(i);
 						putchar(' ');
 						putchar(k);
 						putchar(l);

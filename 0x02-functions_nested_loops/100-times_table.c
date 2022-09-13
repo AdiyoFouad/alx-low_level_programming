@@ -42,12 +42,13 @@ void print_times_table(int num)
 
 	if (num < 0 || num > 15)
 	{
-		return ;
+		return;
 	}
 	if (num == 0)
 	{
 		_putchar(48);
-		return ;
+		_putchar('\n');
+		return;
 	}
 	for (n = 0; n <= num; n++)
 	{

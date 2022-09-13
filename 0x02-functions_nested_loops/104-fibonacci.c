@@ -27,7 +27,7 @@ int main(void)
 	p = k % 10000000000;
 	for (i = 93; i <= 98; i++)
 	{
-		h1 = m + s;
+		h1 = m + l;
 		h2 = s + p;
 		if (l + p > 9999999999)
 		{

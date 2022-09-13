@@ -13,7 +13,7 @@ void numberz(int i)
 	if (i / 100 != 0)
 	{
 		_putchar(i / 100 + '0');
-		_putchar(((i % 100) / 10 ) + '0');
+		_putchar(((i % 100) / 10) + '0');
 	}
 	if ((i / 100 == 0) && (i / 10 != 0))
 	{
@@ -31,17 +31,19 @@ void numberz(int i)
 void print_to_98(int n)
 {
 	int i;
+	int m;
 
 	if (n < 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
+			m = i;
 			if (i < 0)
 			{
-				i = -i;
+				m = -m;
 				_putchar('-');
 			}
-			numberz(i);
+			numberz(m);
 			if (i != 98)
 			{
 				_putchar(',');

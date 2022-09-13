@@ -2,7 +2,7 @@
 
 /**
  * number - function that print number
- * @n: number to print
+ * @i: number to print
  * Return: void
  */
 
@@ -11,12 +11,19 @@ void number(int i)
 	if (i / 100 != 0)
 	{
 		_putchar(i / 100 + '0');
-		_putchar(((i % 100) / 10 ) + '0');
+		_putchar(((i % 100) / 10) + '0');
 	}
-	if ((i / 100 == 0) && (i / 10 != 0))
+	else
 	{
 		_putchar(' ');
-		_putchar(i / 10 + '0');
+		if (i / 10 == 0)
+		{
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar(i / 10 + '0');
+		}
 	}
 	_putchar(i % 10 + '0');
 }
@@ -33,6 +40,15 @@ void print_times_table(int num)
 	int t;
 	int m;
 
+	if (num < 0 || num > 15)
+	{
+		return ;
+	}
+	if (num == 0)
+	{
+		putchar(48);
+		return ;
+	}
 	for (n = 0; n <= num; n++)
 	{
 		_putchar(48);

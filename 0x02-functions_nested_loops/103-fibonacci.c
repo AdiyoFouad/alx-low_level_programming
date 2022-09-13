@@ -17,9 +17,12 @@ int main(void)
 	while (f <= 4000000)
 	{
 		f = j + k;
-		sum += f;
+		if (k % 2 == 0)
+		{
+			sum += k;
+		}
 		j = k;
-		k = sum;
+		k = f;
 	}
 	printf("%ld\n", sum);
 	return (0);

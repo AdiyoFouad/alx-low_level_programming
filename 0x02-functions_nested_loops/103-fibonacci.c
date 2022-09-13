@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	int i;
 	long int j, k, f, sum;
 
 	j = 1;
@@ -21,5 +20,6 @@ int main(void)
 		j = k;
 		k = sum;
 	}while (f <= 4000000);
+	ptintf("%d", sum);
 	return (0);
 }

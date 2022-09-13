@@ -20,6 +20,6 @@ int main(void)
 		j = k;
 		k = sum;
 	}while (f <= 4000000);
-	printf("%d", sum);
+	printf("%ld", sum);
 	return (0);
 }

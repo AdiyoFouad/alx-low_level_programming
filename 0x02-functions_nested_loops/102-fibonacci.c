@@ -9,17 +9,17 @@
 int main(void)
 {
 	int i;
-	int j;
-	int k;
-	int f;
+	long int j;
+	long int k;
+	long int f;
 
 	j = 1;
 	k = 2;
-	printf("%d, %d, ", j, k);
+	printf("%ld, %ld, ", j, k);
 	for (i = 3; i <= 50; i++)
 	{
 		f = j + k;
-		printf("%d", f);
+		printf("%ld", f);
 		if (i != 50)
 		{
 			printf(", ");

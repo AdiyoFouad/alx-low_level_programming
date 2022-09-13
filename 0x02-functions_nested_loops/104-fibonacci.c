@@ -14,7 +14,7 @@ int main(void)
 	j = 1;
 	k = 2;
 	printf("%lu, %lu, ", j, k);
-	for (i = 3; i <= 91; i++)
+	for (i = 0; i <= 91; i++)
 	{
 		f = j + k;
 		printf("%ld, ", f);
@@ -25,7 +25,7 @@ int main(void)
 	l = j % 10000000000;
 	s = k / 10000000000;
 	p = k % 10000000000;
-	for (i = 92; i <= 98; i++)
+	for (i = 93; i <= 98; i++)
 	{
 		h1 = m + s;
 		h2 = s + p;

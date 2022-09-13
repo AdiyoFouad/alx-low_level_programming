@@ -27,7 +27,7 @@ void number(int i)
  * Return: void
  */
 
-void times_table(int num)
+void print_times_table(int num)
 {
 	int n;
 	int t;

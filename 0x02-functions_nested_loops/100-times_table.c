@@ -46,7 +46,7 @@ void print_times_table(int num)
 	}
 	if (num == 0)
 	{
-		putchar(48);
+		_putchar(48);
 		return ;
 	}
 	for (n = 0; n <= num; n++)

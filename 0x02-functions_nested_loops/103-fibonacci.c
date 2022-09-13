@@ -3,7 +3,7 @@
 /**
  * main - prints the sum of fibonacci terms
  *
- * Return 0
+ * Return: 0
  */
 
 int main(void)
@@ -13,13 +13,13 @@ int main(void)
 	j = 1;
 	k = 2;
 	sum = 0;
-	do
+	while (f <= 4000000)
 	{
 		f = j + k;
 		sum += f;
 		j = k;
 		k = sum;
-	}while (f <= 4000000);
+	}
 	printf("%ld", sum);
 	return (0);
 }

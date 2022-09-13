@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * numberz - function that print number
+ * number - function that print number
  * @n: number to print
  * Return: void
  */
 
-void numberz(int n)
+void number(int i)
 {
 	if (i / 100 != 0)
 	{
@@ -41,7 +41,7 @@ void times_table(int num)
 		for (t = 1; t <= num; t++)
 		{
 			m = n * t;
-			numberz(m);
+			number(m);
 			if (t != num)
 			{
 				_putchar(',');

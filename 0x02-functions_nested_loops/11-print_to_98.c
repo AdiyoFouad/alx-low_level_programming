@@ -3,11 +3,11 @@
 
 /**
  * numberz - function that print number
- * @n: number to print
+ * @i: number to print
  * Return: void
  */
 
-void numberz(int n)
+void numberz(int i)
 {
 
 	if (i / 100 != 0)

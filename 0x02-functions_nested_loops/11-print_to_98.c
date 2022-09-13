@@ -19,16 +19,7 @@ void print_to_98(int n)
 				i = -i;
 				_putchar('-');
 			}
-			if (i / 100 != 0)
-			{
-				_putchar(i / 100 + '0');
-				_putchar(i / 10 + '0');
-			}
-			if ((i / 100 == 0) && (i / 10 != 0))
-			{
-				_putchar(i / 10 + '0');
-			}
-			_putchar(i % 10 + '0');
+			numberz(i);
 			if (i != 98)
 			{
 				_putchar(',');
@@ -40,16 +31,7 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			if (i / 100 != 0)
-			{
-				_putchar(i / 100 + '0');
-				_putchar(i / 10 + '0');
-			}
-			if ((i / 100 == 0) && (i / 10 != 0))
-			{
-				_putchar(i / 10 + '0');
-			}
-			_putchar(i % 10 + '0');
+			numberz(i);
 			if (i != 98)
 			{
 				_putchar(',');
@@ -58,4 +40,25 @@ void print_to_98(int n)
 		}
 	}
 	_putchar('\n');
+}
+
+/**
+ * numberz - function that print number
+ * @n: number to print
+ * Return: void
+ */
+
+void numberz(int n)
+{
+
+	if (i / 100 != 0)
+	{
+		_putchar(i / 100 + '0');
+		_putchar(((i % 100) / 10 ) + '0');
+	}
+	if ((i / 100 == 0) && (i / 10 != 0))
+	{
+		_putchar(i / 10 + '0');
+	}
+	_putchar(i % 10 + '0');
 }

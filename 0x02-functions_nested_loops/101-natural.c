@@ -27,4 +27,5 @@ int main(void)
 	_putchar(c / 100 + '0');
 	_putchar(d / 10 + '0');
 	_putchar(d % 10 + '0');
+	return (0);
 }

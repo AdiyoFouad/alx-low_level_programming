@@ -1,5 +1,27 @@
 #include "main.h"
 
+
+/**
+ * numberz - function that print number
+ * @n: number to print
+ * Return: void
+ */
+
+void numberz(int n)
+{
+
+	if (i / 100 != 0)
+	{
+		_putchar(i / 100 + '0');
+		_putchar(((i % 100) / 10 ) + '0');
+	}
+	if ((i / 100 == 0) && (i / 10 != 0))
+	{
+		_putchar(i / 10 + '0');
+	}
+	_putchar(i % 10 + '0');
+}
+
 /**
  * print_to_98 - functions that prints all natural numbers from n to 98
  *@n: parameter of the function
@@ -42,23 +64,3 @@ void print_to_98(int n)
 	_putchar('\n');
 }
 
-/**
- * numberz - function that print number
- * @n: number to print
- * Return: void
- */
-
-void numberz(int n)
-{
-
-	if (i / 100 != 0)
-	{
-		_putchar(i / 100 + '0');
-		_putchar(((i % 100) / 10 ) + '0');
-	}
-	if ((i / 100 == 0) && (i / 10 != 0))
-	{
-		_putchar(i / 10 + '0');
-	}
-	_putchar(i % 10 + '0');
-}

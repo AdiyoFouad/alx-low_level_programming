@@ -12,6 +12,7 @@ int main(void)
 
 	j = 1;
 	k = 2;
+	f = 0;
 	sum = 0;
 	while (f <= 4000000)
 	{
@@ -20,6 +21,6 @@ int main(void)
 		j = k;
 		k = sum;
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (0);
 }

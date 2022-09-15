@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - function that checks for uppercase character.
+ * main - main function
  * Return: 0
  */
 int main(void)
@@ -27,5 +27,5 @@ int main(void)
 			printf("%d ", h);
 	h++;
 	}
-return (0);
+	return (0);
 }

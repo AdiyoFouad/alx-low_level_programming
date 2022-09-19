@@ -8,7 +8,8 @@
 
 int _atoi(char *s)
 {
-	int i, j, n, p;
+	int i, j, p;
+	unsigned int n;
 	char c;
 
 	i = 0;
@@ -26,7 +27,7 @@ int _atoi(char *s)
 		{
 			p *= -1;
 		}
-		else if(c >= '0' && c <= '9')
+		else if (c >= '0' && c <= '9')
 		{
 			n = n * 10 + (c - '0');
 		}

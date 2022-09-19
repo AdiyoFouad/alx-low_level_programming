@@ -17,17 +17,28 @@ void rev_string(char *s)
 		i++;
 	}
 	i--;
-	str = NULL;
-
 	j = 0;
-	while (i >= 0)
+	while (i > j)
 	{
-		*(str + j) = *(s + i);
+		rev(s + i, s + j);
 		j++;
 		i--;
 	}
 
-	s = str;
-		
+}
 
+/**
+ * rev - function that reverse swap two char
+ * @a: first parameter
+ * @b: second parameter
+ * Return: void
+ */
+
+void rev(char *a, char *b)
+{
+	char tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

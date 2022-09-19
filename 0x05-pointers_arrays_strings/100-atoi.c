@@ -30,7 +30,7 @@ int _atoi(char *s)
 		{
 			n = n * 10 + (c - '0');
 		}
-		else
+		else if (n > 0)
 		{
 			break;
 		}

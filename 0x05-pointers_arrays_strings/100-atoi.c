@@ -42,6 +42,7 @@ int _atoi(char *s)
 			break;
 		}
 	}
-	return (n);
+	number = (int)(n);
+	return (number);
 }
 

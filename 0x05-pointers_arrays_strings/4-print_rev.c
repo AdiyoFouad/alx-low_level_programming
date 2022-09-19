@@ -13,17 +13,17 @@ void print_rev(char *s)
 	char c;
 
 	i = 0;
-	while (*(str + i))
+	while (*(s + i))
 	{
 		i++;
 	}
-	c = *(str + i);
+	c = *(s + i);
 	j = 0;
 	while (c)
 	{
 		_putchar(c);
 		j++;
-		c = *(str + i - j);
+		c = *(s + i - j);
 	}
 	_putchar('\n');
 }

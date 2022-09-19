@@ -1,5 +1,22 @@
 #include "main.h"
 
+
+/**
+ * rev - function that reverse swap two char
+ * @a: first parameter
+ * @b: second parameter
+ * Return: void
+ */
+
+void rev(char *a, char *b)
+{
+	char tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
 /**
  * rev_string - function that reverses a string
  * @s: string to reverse
@@ -9,7 +26,6 @@
 void rev_string(char *s)
 {
 	int i, j;
-	char *str;
 
 	i = 0;
 	while (*(s + i))
@@ -27,18 +43,3 @@ void rev_string(char *s)
 
 }
 
-/**
- * rev - function that reverse swap two char
- * @a: first parameter
- * @b: second parameter
- * Return: void
- */
-
-void rev(char *a, char *b)
-{
-	char tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-}

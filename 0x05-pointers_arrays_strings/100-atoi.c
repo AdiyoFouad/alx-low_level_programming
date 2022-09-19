@@ -8,7 +8,7 @@
 
 int _atoi(char *s)
 {
-	int i, j, n, s;
+	int i, j, n, p;
 	char c;
 
 	i = 0;
@@ -18,13 +18,13 @@ int _atoi(char *s)
 	}
 	i--;
 	n = 0;
-	s = 1;
+	p = 1;
 	for (j = 0; j <= i; j++)
 	{
 		c = *(s + j);
 		if (c == '-')
 		{
-			s *= -1;
+			p *= -1;
 		}
 		else if(c >= '0' && c <= '9')
 		{
@@ -36,6 +36,6 @@ int _atoi(char *s)
 		}
 	}
 	
-	return (s * n);
+	return (p * n);
 }
 

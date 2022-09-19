@@ -8,9 +8,8 @@
 
 int _atoi(char *s)
 {
-	int number, i, j, l;
+	int i, j, n, s;
 	char c;
-	char *n;
 
 	i = 0;
 	while (*(s + i))
@@ -18,31 +17,25 @@ int _atoi(char *s)
 		i++;
 	}
 	i--;
-	l = 0;
+	n = 0;
+	s = 1;
 	for (j = 0; j <= i; j++)
 	{
 		c = *(s + j);
-		if (c == '-' || c == '+')
+		if (c == '-')
 		{
-			if (l == 0)
-			{
-				*n = c;
-				l = 1;
-			}
-			else
-				break;
+			s *= -1;
 		}
-		if ((c >= '0' && c <= '9'))
+		else if(c >= '0' && c <= '9')
 		{
-			*(n + l) = c;
-			l++;
+			n = n * 10 + (c - '0');
 		}
-		else if (l > 1)
+		else
 		{
 			break;
 		}
 	}
-	number = (int)(n);
-	return (number);
+	
+	return (s * n);
 }
 

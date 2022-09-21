@@ -4,7 +4,7 @@
  * infinite_add - function that adds two numbers
  * @n2: first number
  * @n1: second number
- * @r: buffer or result
+ * @r: buffer of result
  * @size_r: buffer size
  * Return: r or 0
  */

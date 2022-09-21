@@ -2,16 +2,16 @@
 
 /**
  * infinite_add - function that adds two numbers
- * @a: first number
- * @b: second number
+ * @n2: first number
+ * @n1: second number
  * @r: buffer or result
  * @size_r: buffer size
  * Return: r or 0
  */
 
-char *infinite_add(char *a, char *b, char *r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-  int i, j, k, l, m, n;
+	int i, j, k, l, m, n;
 
 	for (i = 0; n1[i]; i++)
 

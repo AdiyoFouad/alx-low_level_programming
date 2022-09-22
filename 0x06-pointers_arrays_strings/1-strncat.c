@@ -33,9 +33,9 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = ld, j = 0; *(src + j) && j < n; i++, j++)
 	{
-		*(dest + i) = *(src + i);
+		*(dest + i) = *(src + j);
 	}
-	*(dest + _strlen(dest)) = '\0';
+	*(dest + i) = '\0';
 
 	return (dest);
 }

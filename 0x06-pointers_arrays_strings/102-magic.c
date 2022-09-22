@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - main function
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
@@ -10,9 +15,9 @@ int main(void)
 	p = &n;
 	/*
 	 * write your line of code here
-	 * Remember: 
+	 * Remember:
 	 * - you are not allowed to use a
-	 * - you are not to modify p
+	 * - you are not allowed to modify p
 	 * - only one statement
 	 * - you are not allowed to code anything else than this line of code
 	 */

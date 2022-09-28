@@ -14,7 +14,7 @@ int sqrt_check(int s, int c)
 	if (s * s > c)
 		return (-1);
 	return (sqrt_check(s + 1, c));
-
+}
 /**
  * _sqrt_recursion - function that returns the natural root of a number
  * @n: parameter

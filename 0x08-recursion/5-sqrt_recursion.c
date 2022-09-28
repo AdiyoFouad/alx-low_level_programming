@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 	else
 	{
 		m = n--;
-		if (m * m = n && m >= 2)
+		if (m * m == n && m >= 2)
 			return (m);
 		else
 			return (_sqrt_recursion(m));

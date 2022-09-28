@@ -15,8 +15,8 @@ int check(char *a, char *b, int i)
 	{
 		if (*(a + i) == '\0' && *(b + i) == '\0')
 			return (1);
-		return (check(a, b, i + 1));
 	}
+	return (check(a, b, i + 1));
 }
 /**
  * wildcmp - function that compares two strings

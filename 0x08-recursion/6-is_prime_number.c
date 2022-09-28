@@ -16,12 +16,12 @@ int prime_check(int s, int c)
 	return (prime_check(s + 1, c));
 }
 /**
- * _is_prime_number - function that checks if n is a prime number
+ * is_prime_number - function that checks if n is a prime number
  * @n: parameter
  * Return: 1 if n is prime number or 0 otherwise
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	if (n < 0)
 		return (0);

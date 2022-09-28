@@ -22,9 +22,9 @@ int palcheck(int x, int y, char *s)
 {
 	if (x >= y)
 		return (1);
-	if ((*(s + x) != *(s + y - x)) && x < y)
+	if (*(s + x) != *(s + y - x))
 		return (0);
-	return (palcheck(x + 1, y - 1, s));
+	return (palcheck(x + 1, y, s));
 }
 /**
  * is_palindrome - check if a string is a palindrome

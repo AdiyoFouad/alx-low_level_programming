@@ -23,8 +23,6 @@ int sqrt_check(int s, int c)
 
 int _sqrt_recursion(int n)
 {
-	int m;
-
 	if ( n < 0 )
 		return (-1);
 	else if (n == 0 || n == 1)

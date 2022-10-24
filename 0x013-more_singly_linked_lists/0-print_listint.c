@@ -1,39 +1,22 @@
-#include "main.h"
-/**
- * print_number - print integers
- * @n: integer to print
- * Return: void
- */
+#include "lists.h"
+#include <stdio.h>
 
-void print_number(int n)
+/**
+ * print_listint -  prints all the elements of a listint_t list.
+ * @h: list to print
+ *
+ * Return: number of elements in the list
+*/
+
+size_t print_listint(const listint_t *h)
 {
-	unsigned int num;
+	size_t count = 0;
 
-	if (n < 0)
+	while (h != NULL)
 	{
-		num = -n;
-		_putchar('-');
+		printf("%d\n", h->n);
+		h = h->next;
+		count++;
 	}
-	else
-		num = n;
-	if (num / 10)
-		print_number(num / 10);
-	_putchar(num % 10 + '0');
+	return (count);
 }
-/**
- * print_listin - prints all the element of a listint_t list
- * @h: list head
- * Return: the number of nodes
- */
- size_t print_listint(const listint_t *h)
- {
-    size_t n = 0;
-
-    while (h != NULL)
-    {
-        printf("%d\n",h->n);
-        h = h->next;
-        n++;
-    }
-    return (n);
- }

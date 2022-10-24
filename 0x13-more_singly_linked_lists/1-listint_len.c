@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint -  prints all the elements of a listint_t list.
+ * listint_len -  prints all the elements of a listint_t list.
  * @h: list to print
  *
  * Return: number of elements in the list

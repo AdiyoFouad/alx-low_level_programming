@@ -24,5 +24,6 @@ void free_listint(listint_t *);
 void free_listint2(listint_t **);
 int pop_listint(listint_t **);
 listint_t *get_nodeint_at_index(listint_t *, unsigned int);
+int sum_listint(listint_t *);
 
 #endif

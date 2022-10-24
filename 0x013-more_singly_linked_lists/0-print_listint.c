@@ -33,7 +33,7 @@ void print_number(int n)
     {
         printf("%d\n",h->n);
         h = h->next;
-        n++
+        n++;
     }
     return (n);
  }

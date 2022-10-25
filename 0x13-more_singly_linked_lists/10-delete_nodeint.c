@@ -8,31 +8,30 @@
  */
 int delete_noteint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *curent, *cnext;
+	int i;
+	listint_t *current, *cnext;
 
 	if (head == NULL || *head == NULL)
 	{
 		return (NULL);
 	}
-	curent = *head;
+	current = *head;
 	if (index == 0)
 	{
-		cnext = curent->next;
-		free(curent);
+		cnext = current->next;
+		free(current);
 		*head = cnext;
 		return (1);
 	}
-	while (curent != NULL)
+	for (i = 0; i < index - 1; i++)
 	{
-		if (index == 1)
-		{
-			cnext = curent->next;
-			curent->next = cnext->next;
-			free(cnext);
-			return (1);
-		}
-		curent = curent->next;
-		index--;
+		if (current->next == NULL)
+			return (-1);
+		current = current->next;
 	}
-	return (-1);
+	cnext = curent->next;
+	curent->next = cnext->next;
+	free(cnext);
+	return (1);
+
 }

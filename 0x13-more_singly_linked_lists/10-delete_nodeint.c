@@ -9,7 +9,7 @@ int delete_noteint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *curent, *cnext;
 
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		return (NULL);
 	}

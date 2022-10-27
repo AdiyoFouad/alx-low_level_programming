@@ -4,7 +4,7 @@
 *Return: 0 big endian, 1 little endian.
 */
 
-int get_endianness()
+int get_endianness(void)
 {
 	unsigned int x = 0x7343211;
 

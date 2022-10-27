@@ -1,33 +1,12 @@
 #include "main.h"
 
 /**
-  *_strlen - returns the length of a string.
-  *@s: pointer to string.
-  *
-  *Return: length.
-*/
-
-unsigned int _strlen(const char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
   *getp - returns the value of x to the power of y.
   *@x: number.
   *@y: power.
   *
-  *Return: x to the pow of y.
-  *0 if x < 0.
+  *Return: x to the pow of y .0 if x < 0.
 */
-
 int getp(int x, int y)
 {
 	if (y < 0)
@@ -36,7 +15,6 @@ int getp(int x, int y)
 		return (1);
 	if (y == 1)
 		return (x);
-
 	return (x * getp(x, y - 1));
 }
 
@@ -46,16 +24,16 @@ int getp(int x, int y)
   *
   *Return: converted number or 0 if b is null or has chars not 0 or 1.
 */
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int n, l, i;
 	int power;
+	char *temp = b;
 
 	if (!b)
 		return (0);
-
-	l = _strlen(b);
+	while (temp)
+		l++;
 	power = 0;
 	n = 0;
 	i = l - 1;
@@ -69,9 +47,7 @@ unsigned int binary_to_uint(const char *b)
 			l--;
 		}
 		else
-		{
 			return (0);
-		}
 	}
 	return (n);
 }
